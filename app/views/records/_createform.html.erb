@@ -1,0 +1,11 @@
+<!-- form template for the lookup action
+    note : can only query one whois at a time -->
+    
+<%= form_tag '/records/create' do %>
+
+    <%=label_tag 'Domaine' %>
+    <%=text_field_tag 'domain'%>
+
+    <%= submit_tag 'Créer whois' %>
+
+<% end %>

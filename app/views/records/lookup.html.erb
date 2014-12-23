@@ -1,0 +1,8 @@
+<% if @whois!=nil  %>
+    <div id="whois">
+        <%= simple_format(@whois.to_s) %>
+    </div>
+<% end %>
+<div class="link-button" style="width: 120px; padding: 0.1% 0.3%;">
+    <%= link_to 'new lookup', records_lookup_new_path %>
+</div>
